@@ -1,2 +1,2 @@
 # laszloscheers.github.io
-Web Design and Development Proyect
+Web Design and Development Project
