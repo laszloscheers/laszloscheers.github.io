@@ -48,3 +48,8 @@ p {
     margin-bottom: 20px;
     color: darkslateblue;
 }
+a {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: darkslateblue;
+}

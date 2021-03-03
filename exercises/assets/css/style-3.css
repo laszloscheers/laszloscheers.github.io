@@ -43,3 +43,8 @@ p {
     margin-bottom: 20px;
     color: white;
 }
+a {
+    font-size: 22px;
+    font-family: sans-serif;
+    color: white;
+}
