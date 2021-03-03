@@ -19,7 +19,7 @@ input, button, textarea, select { font: inherit }
 
 body{ background-color: lightcyan; }
 
-
+/* Main heading */
 h1 {
     font-size: 84px;
     text-align: center;
@@ -28,19 +28,19 @@ h1 {
     margin-bottom: 32px;
     color: blue;
 }
-
+/* Small headings */
 h2 {
     font-size: 36px;
     margin-bottom: 4px;
     color: blue;
 }
-
+/* Smaller headings */
 h3 {
     font-size: 24px;
     margin-bottom: 4px;
     color: blue;  
 }
-
+/* Text paragraphs */
 p {
     font-size: 18px;
     font-family: sans-serif;
@@ -48,6 +48,7 @@ p {
     margin-bottom: 20px;
     color: darkslateblue;
 }
+/*Hyperlinks*/
 a {
     font-size: 18px;
     font-family: sans-serif;

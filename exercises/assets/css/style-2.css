@@ -19,7 +19,7 @@ input, button, textarea, select { font: inherit }
 
 body{ background-color: antiquewhite; }
 
-
+/* Main heading */
 h1 {
     font-size: 72px;
     margin-bottom: 56px;
@@ -28,7 +28,7 @@ h1 {
     font-family: sans-serif;
     color: brown;
 }
-
+/* Small headings */
 h2 {
     font-size: 30px;
     margin-bottom: 64px;
@@ -39,19 +39,20 @@ h2 {
     font-weight: normal;
     color: brown;     
 }
-
+/* Smaller headings */
 h3 {
     font-size: 32px;
     margin-bottom: 4px;
     color: brown;
 }
-
+/* Text paragraphs */
 p {
     font-size: 22px;
     line-height: 1.6;
     margin-bottom: 20px;
     
 }
+/*Hyperlinks*/
 a {
     font-size: 22px;
     color: brown;

@@ -69,4 +69,9 @@ p {
     margin-top:0;
     margin-bottom: 32px;
 }
+/*Hyperlinks*/
+a {
+    font-size: 22px;
+    color: #fff;
+}
 

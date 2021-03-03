@@ -71,3 +71,8 @@ img {
     /* Drop shadow effect at right and bottom of image*/
     box-shadow:  8px 10px 8px #888;
 }
+/*Hyperlinks*/
+a {
+    font-size: 22px;
+    color: #455C80;
+}

@@ -54,3 +54,8 @@ img {
     /* Soften corners of images*/
     border-radius: 15px;
 }
+/*Hyperlinks*/
+a {
+    font-size: 22px;
+    color: #455C80;
+}

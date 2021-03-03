@@ -18,7 +18,7 @@ input, button, textarea, select { font: inherit }
 @media (max-width: 767px) { body { padding: 12% 8% } }
 body{ background-color: purple; }
 
-
+/* Main heading */
 h1 {
     font-size: 84px;
     margin-bottom: 64px;
@@ -27,7 +27,7 @@ h1 {
     letter-spacing: 4px;
     color: white;
 }
-
+/* Small headings */
 h2 {
     font-size: 28px;
     margin-bottom: 4px;
@@ -35,7 +35,7 @@ h2 {
     text-transform: uppercase;
     color: white;
 }
-
+/* Text paragraphs */
 p {
     font-size: 20px;
     font-family: sans-serif;
@@ -43,6 +43,7 @@ p {
     margin-bottom: 20px;
     color: white;
 }
+/*Hyperlinks*/
 a {
     font-size: 22px;
     font-family: sans-serif;
