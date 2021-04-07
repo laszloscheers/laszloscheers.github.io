@@ -32,8 +32,8 @@ section *:last-child { margin-bottom: 0 }
 		padding-right: calc( (100% - 1140px)/2 );
 	}
 	.header-narrow {
-		padding-left: calc( (70% - 920px)/2 );
-		padding-right: calc( (70% - 920px)/2 );
+		padding-left: calc( (100% - 920px)/2 );
+		padding-right: calc( (100% - 920px)/2 );
 	}
 
 }
@@ -60,58 +60,33 @@ section *:last-child { margin-bottom: 0 }
 
 /* Image in header */
 header img {
-	max-width: 1200px;
+	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
-    border-style: solid;
-    border-radius: 15px;
-    border-width: 3px;
-    border-color: #888;
-} 
-
-.hyperlink img {
-
-    max-block-size: 300px;
-	margin-left: auto;
-	margin-right: auto;
-    border-style: solid;
-    border-width: 0.5px;
-    border-radius: 15px;
-    box-shadow:  6px 8px 6px #888;
+	margin-bottom: 24px;
 }
 
 /* Main heading in header */
 header h1 {
-	font-family: 'Source Sans Pro', sans-serif;
-    font-size: calc(40px + (84 - 48) * ((100vw - 320px) / (1140 - 320)));
-    color: #ffffff;
-    text-align: center;
-
-}
-.bold {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: calc(40px + (84 - 48) * ((100vw - 320px) / (1140 - 320)));
-    color: #ff4d5a;
-    text-align: center;
-
+	font-family: 'Noto Serif', serif;
+    font-size: calc(48px + (84 - 48) * ((100vw - 320px) / (1140 - 320)));
+    color: #1f364d;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
 }
 
 /* Sub-heading in header */
 header h2 {
-	font-family: 'Source Sans Pro', sans-serif;
-    font-size: calc(30px + (22 - 18) * ((100vw - 320px) / (1140 - 320)));
-    color: #fde8cd;
+	font-family: 'Noto Serif', serif;
+    font-size: calc(19px + (22 - 18) * ((100vw - 320px) / (1140 - 320)));
+    color: #2F4F4F;
     line-height: 1.6;
-    letter-spacing: 01.6px;
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 50px;
 }
 
 /* ======================= SECTIONS ======================== */
 
-/* Regular and larger screens */
 
+/* Regular and larger screens */
 @media (min-width: 1200px) { 
 	section { 
 		margin-left: auto;
@@ -123,6 +98,7 @@ header h2 {
 	.section-narrow {
 		padding-left: calc( (100% - 920px)/2 );
 		padding-right: calc( (100% - 920px)/2 );
+	
 	}
 }
 
@@ -148,57 +124,31 @@ header h2 {
 
 /* Sections: main heading */
 section h1 {
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Noto Serif', serif;
     font-size: calc(32px + (48 - 32) * ((100vw - 320px) / (1140 - 320)));
-    color: #fde8cd;
-    margin-top: 25px;
-    margin-bottom: 50px;
+    letter-spacing: -1px;
+    color: #000;
+    margin-bottom: 12px;
     line-height: 1.2;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-align: center;
 }
-section h3 {
-	font-family: 'Source Sans Pro', sans-serif;
-    font-size: calc(7px + (48 - 32) * ((100vw - 320px) / (1140 - 320)));
-    color: #ff4d5a;
-    text-align: center;
-    text-transform: uppercase;
+
+/* Sections: text paragraphs */
+section p {
+    font-family: 'Rubik', sans-serif;
+    font-size: calc(17px + (20 - 17) * ((100vw - 320px) / (1140 - 320)));
+    color: #2F4F4F;
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
 
 /* Coloured backgrounds */
-.bg-hero-block{ background-color: #2a3e56 }
-.bg-dark-1 { background-color: #132945 }
-.bg-dark-2 { background-color: #040f1c }
+.bg-hero-block { background-color: #f5f9fb }
+.bg-pastel-1   { background-color: #BEC7B4 }
+.bg-pastel-2   { background-color: #DEE2D9 }
 
 
-/* == FLEXBOX PARENT CONTAINER == */
+/* ======================= UTILITY STYLES OR CLASSES ======================== */
 
-.container-flexbox { 
-    display: flex; 
-    justify-content: space-between; 
-    flex-wrap: wrap; 
-}
-
-/* div Boxes */
-
-.hyperlink {
-    padding: 20px; 
-    margin-bottom: 40px; 
-    width: 33%;
-}
-
-.names {
-    padding: 20px; 
-    width: 33%;
-}
-.title {
-    padding: 12px; 
-    margin-bottom: 40px;  
-    width: 45%; 
-}
-.photo {
-    padding: 12px; 
-    margin-bottom: 40px;  
-    width: 45%; 
+.text-center {
+	text-align: center !important /* Important means that the style overrides any other style*/
 }

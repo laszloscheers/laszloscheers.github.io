@@ -45,34 +45,46 @@ p {
     line-height: 1.6
 }
 
+/* == FLEXBOX PARENT CONTAINER == */
+
+.container-flexbox { 
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
 /* div Boxes */
 .bono {
     background-color: #4081ec;
     padding: 12px; 
     margin-bottom: 40px; 
-    width: 220px 
+    width: 23%; 
+    width: 31%; 
 }
 
 .edge {
     background-color: #ffbb33;
     padding: 12px; 
     margin-bottom: 40px; 
-    width: 220px 
+    width: 23%; 
+    width: 31%;
 }
 
 .adam {
     background-color: #f73345;
     padding: 12px; 
     margin-bottom: 40px; 
-    width: 220px 
+    width: 23%; 
+    width: 31%;
 }
 
 .larry {
     background-color: #e0e0e0;
     padding: 12px; 
     margin-bottom: 40px; 
-    width: 220px 
+    width: 23%; 
 }
+
 
 .bono h3,
 .bono p,
