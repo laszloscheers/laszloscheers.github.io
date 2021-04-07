@@ -61,8 +61,9 @@ header img {
 	margin-right: auto;
     border-style: solid;
     border-radius: 8px;
-    border-width: 3px;
+    border-width: 1.5px;
     border-color: #888;
+    box-shadow:  3px 3px 3px #888;
 } 
 
 .hyperlink img {
@@ -73,7 +74,6 @@ header img {
     border-style: solid;
     border-width: 2px;
     border-radius: 8px;
-    box-shadow:  3px 3px 3px #888;
 }
 
 /* Main heading in header */
