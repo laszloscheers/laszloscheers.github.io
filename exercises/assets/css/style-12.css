@@ -70,8 +70,9 @@ header img {
 header h1 {
 	font-family: 'Roboto Condensed', sans-serif;
     font-size: calc(48px + (84 - 48) * ((100vw - 320px) / (1140 - 320)));
-    color: #3e424e;
-    letter-spacing: -1px;
+    color: #3e414f;
+    letter-spacing: 8px;
+	word-spacing: 102%;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 6px;
@@ -79,9 +80,9 @@ header h1 {
 
 /* Sub-heading in header */
 header h2 {
-	font-family: 'PT Sans', sans-serif;
-    font-size: calc(19px + (22 - 18) * ((100vw - 320px) / (1140 - 320)));
-    color: #000000;
+	font-family: 'Roboto Condensed', sans-serif;
+    font-size: calc(26px + (22 - 18) * ((100vw - 320px) / (1140 - 320)));
+    color: #000;
     line-height: 1.6;
 }
 
@@ -128,8 +129,10 @@ header h2 {
 section h1 {
 	font-family: 'Roboto Condensed', sans-serif;
     font-size: calc(32px + (48 - 32) * ((100vw - 320px) / (1140 - 320)));
-    letter-spacing: -1px;
-    color: #424642;
+	font-weight: normal;
+    letter-spacing: 4px;
+	word-spacing: 102%;
+    color: #e1f5fe;
     margin-bottom: 12px;
     line-height: 1.2;
     text-transform: uppercase;
@@ -140,15 +143,15 @@ section h1 {
 section p {
     font-family: 'PT Sans', sans-serif;
     font-size: calc(17px + (20 - 17) * ((100vw - 320px) / (1140 - 320)));
-    color: #536162;
-    margin-bottom: 20px;
+    color: #fff;
+    margin-bottom: 22px;
     line-height: 1.5;
 }
 
 /* Coloured backgrounds */
-.bg-hero-block{ background-color: #b2e6fe }
+.bg-header { background-color: #b2e6fe }
 .bg-dark-1 { background-color: #000000 }
-.bg-dark-2 { background-color: #3e424e }
+.bg-dark-2 { background-color: #3e414f }
 
 
 /* ======================= UTILITY STYLES OR CLASSES ======================== */
