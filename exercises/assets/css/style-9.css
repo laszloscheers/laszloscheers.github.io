@@ -40,51 +40,38 @@ h3 {
 /* Paragraphs of text */
 p {
 	font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     color: #696969;
-    line-height: 1.6
+    line-height: 1.7
 }
 
-/* == FLEXBOX PARENT CONTAINER == */
-
-.container-flexbox { 
-    display: flex; 
-    justify-content: space-between; 
-    flex-wrap: wrap; 
-}
-
-/* div Boxes */
 .bono {
     background-color: #4081ec;
     padding: 12px; 
     margin-bottom: 40px; 
-    width: 23%; 
-    width: 31%; 
+    width: 220px 
 }
 
 .edge {
     background-color: #ffbb33;
     padding: 12px; 
     margin-bottom: 40px; 
-    width: 23%; 
-    width: 31%;
+    width: 220px 
 }
 
 .adam {
     background-color: #f73345;
     padding: 12px; 
     margin-bottom: 40px; 
-    width: 23%; 
-    width: 31%;
+    width: 220px 
 }
 
 .larry {
     background-color: #e0e0e0;
     padding: 12px; 
     margin-bottom: 40px; 
-    width: 23%; 
+    width: 220px 
 }
-
 
 .bono h3,
 .bono p,

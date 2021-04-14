@@ -76,3 +76,21 @@ a {
     font-size: 22px;
     color: #455C80;
 }
+
+/* Passive link styles */
+            
+a:link, a:visited {
+    text-decoration: none;
+    padding-bottom: 2px;
+    color: #000;
+    border-bottom: solid 2px #000;
+} 
+            
+/* Interactive link styles */
+            
+a:hover, a:focus, a:active {
+    text-decoration: none; 
+    padding-bottom: 2px;
+    color: #f26f21;
+    border-bottom: solid 2px blue;
+}
