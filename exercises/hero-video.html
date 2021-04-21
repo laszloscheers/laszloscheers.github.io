@@ -7,7 +7,16 @@
     <title>Hero Block: With Images</title>
     <link rel="preload" href="assets/videos/hero-still.jpg">
     <link rel="stylesheet" href="assets/css/hero-video.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0D2H7V2X4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'G-G0D2H7V2X4');
+    </script>
+    
 </head>
 
 
@@ -22,7 +31,7 @@
         </div>
 
         <div class="hero-bg-media">
-            <video loop muted autoplay poster="assets/videos/hero-still.jpg" class="background-video">  
+            <video loop playsinline muted autoplay poster="assets/videos/hero-still.jpg" class="background-video" disablepictureinpicture preload="auto">  
                 <source src="assets/videos/hero-video.mp4" type="video/mp4">
             </video>
         </div>
