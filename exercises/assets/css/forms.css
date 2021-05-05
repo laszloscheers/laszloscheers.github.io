@@ -78,7 +78,7 @@ header h1 {
 /* Sub-heading in header */
 header h2 {
 	font-family: 'Fira Sans', sans-serif;
-    font-size: calc(19px + (22 - 18) * ((100vw - 320px) / (1140 - 320)));
+    font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (1140 - 320)));
     color: #2F4F4F;
     line-height: 1.6;
 	font-weight: 500;
@@ -241,7 +241,7 @@ section p {
     display: flex;
     margin-top: 32px; margin-bottom: 32px;
     align-items: stretch;
-    padding: 20px; background-color: lightgray;
+    padding: 20px; background-color: lightgray;  
 }
     
 @media (min-width: 767px) {
