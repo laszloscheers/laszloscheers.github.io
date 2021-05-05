@@ -8,6 +8,9 @@
     <meta name="description" content="Dublin's finest smoothie store. Offering tasty alternatives to sugary and unhealthy snacks for busy, on-the-go, on-trend professionals.">
 
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Link to icons for Font Awesome 5 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
 
     <!-- Google Font stylesheet -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,11 +23,84 @@
     <main>
     <article>
 
+    <!-- Begin desktop menu -->
+    <div class="container-menu-desktop menu-transparent menu-sticky">
+        <!-- first child item -->
+        <a href="index.html"><img src="assets/img/smoothies-logo.png" alt="website logo"></a>
+        <!-- second child item -->
+        <ul>
+            <li><a href="#watermelon">Watermelon</a></li>
+            <li><a href="#apple">Apple</a></li>
+            <li><a href="#blueberry">Blueberry</a></li>
+            <li><a href="#lemon">Lemon</a></li>
+            <li><a href="#email-signup-form" class="btn-cta"><i class="fas fa-envelope"></i> Newsletter</a></li>  
+          </ul>
+    </div>
+    <!-- End desktop menu -->
+
+    <!-- Begin mobile menu bar -->
+    <div class="container-menu-bar-mobile menu-transparent menu-sticky">
+            <!-- first child -->
+            <a href="index.html"><img src="assets/img/smoothies-logo.png" alt="website logo"></a>
+            <!-- second child -->
+            <div class="item-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    <!-- End mobile menu bar -->
+
+    <!-- Begin mobile menu slide-out options -->
+    <div class="flyout-menu flyout-menu-is-closed menu-light">
+        <ul>
+            <li><a href="#watermelon">Watermelon</a></li>
+            <li><a href="#apple">Apple</a></li>
+            <li><a href="#blueberry">Blueberry</a></li>
+            <li><a href="#lemon">Lemon</a></li>
+            <li><a href="#email-signup-form" class="btn-cta"><i class="fas fa-envelope"></i> Newsletter</a></li>  
+          </ul>
+
+        <hr>
+        <h4>About Me</h4>
+        <div class="fly-out-profile-box">
+            <img src="assets/img/profile-pic.jpg">
+            <p>Hi, I'm <b>Mary Smith</b>, a web and digital designer based in Dublin, Ireland.</p>
+        </div>
+   
+        <h4>Contact</h4>
+        <p>Have a project you'd like to discuss? Let's make something great together!</p>
+
+        <h5><a href="tel:0881234567">088 123 4567</a></h5>
+
+        <h5><a href="mailto:ibat.training@gmail.com" target="_blank">marysmith@myemail.com</a></h5>
+
+        <h4>Social Links</h4>
+        <div class="fly-out-social-icons">
+            <a href="https://www.github.com/ibat-web-dev" target="_blank"><i class="fab fa-github-square fa-fw"></i></a>
+            <a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a>
+            <a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/ibatcollegedublin/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/IBATcollege" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        </div>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+    </div>
+    <!-- End mobile menu slide-out options -->
+
+    <!-- Begin hero block -->
+    <header class="container-hero">
+        <h1>Smooth Smoothies</h1>
+        <h2>Where flavour meets goodness</h2>
+    </header>
+    <!-- End hero block -->
+
     <section>
         <h2>Our world-class smoothies are great at any time of the day and offer a tasty alternative to sugary and unhealthy snacks!.</h2>
     </section>
 
-    <section class="bg-watermelon">
+    <section class="bg-watermelon" id="watermelon">
         <div class="container-flexbox">
 
             <div class="col-2">
@@ -39,7 +115,7 @@
 
     </section>
 
-    <section class="bg-apple">
+    <section class="bg-apple" id="apple">
 
         <div class="container-flexbox">
 
@@ -56,7 +132,7 @@
 
     </section>
 
-    <section class="bg-blueberry">
+    <section class="bg-blueberry" id="blueberry">
 
         <div class="container-flexbox">
 
@@ -73,7 +149,7 @@
 
     </section>
 
-    <section class="bg-lemon">
+    <section class="bg-lemon" id="lemon">
         
         <div class="container-flexbox">
             
@@ -90,8 +166,144 @@
 
     </section>
 
+	<!-- =============== BEGIN EMAIL SIGN UP FORM HTML ============= -->
+
+	<!-- Begin container for email signup form -->
+	<div class="container-form-email-signup">
+
+		<h3>Join our email list</h3>
+        <p>Keep me up-to-date with your latest healthy smoothie recipes and special offers.</p>
+
+        <!-- Form begins here -->
+		<form id="email-signup-form" name="email-signup-form" accept-charset="utf-8"  method="post" action="https://formspree.io/f/moqyjebk">
+
+			<!-- Begin email sign up form fields -->
+			
+			<div class="flex-row">
+				<label for="email-address">Email:</label>
+                <input type="text" id="email-address" name="email-address" placeholder="Your email address" maxlength="80" autocapitalize="none" required>
+                <input type="hidden" name="_subject" id="email-subject" value="Email Signup Form Submission">
+				<button id="btn-submit" type="submit" class="btn-submit">Subscribe <i class="fas fa-envelope"></i></button>
+			</div>
+			<!-- End email sign up form fields -->
+		</form>
+        <!-- Form ends here -->
+    </div>
+	<!-- End container for email signup form -->
+
+	<!-- =============== END EMAIL SIGN UP FORM HTML ============= -->
+
+	<!-- Begin HTML footer -->
+
+	<footer class="container-footer">
+
+		<div class="item-3">
+
+			<h4>Site Map</h4>
+			<p><i class="fas fa-home fa-fw"></i><a href="../../index.html">Home</a></p>
+			<p><i class="fas fa-file-alt fa-fw"></i><a href="../index.html">Portfolio</a></p>
+			<p><i class="fas fa-lock fa-fw"></i><a href="../../privacy.html">Privacy</a></p>
+		
+		</div>
+
+		<div class="item-3">
+			<h4>About Me</h4>
+			<p>Hi, I'm Mary Smith. I'm a web designer and developer.</p>
+			
+			<p>I created this sample web page to showcase some of my digital creation skills.</p>
+		</div>
+
+		<div class="item-3">
+			<h4>Contact</h4>
+			<p><i class="fas fa-envelope fa-fw"></i><a href="mailto:ibat.training@gmail.com">Email</a></p>
+			<p><i class="fab fa-github-square fa-fw"></i><a href="https://www.github.com/ibat-web-dev" target="_blank">GitHub</a></p>
+			<p><i class="fab fa-linkedin fa-fw"></i><a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank">Linkedin</a></p>
+		</div>
+		
+	</footer>
+	
+	<!-- End HTML footer -->
+
+    <!-- Begin JavaScript code for desktop and mobile menus -->
+    <script>
+
+        // Code to detect click of option within fly-out menu
+        let specifiedElement = document.querySelector('.flyout-menu');
+        document.addEventListener('click', function(event) {
+            var isClickInside = specifiedElement.contains(event.target);
+            //If link is within current web page
+            if (isClickInside) {
+                //Get id of anchor
+                let anchor_id = window.location.hash;
+                //Add extra spacing above anchor
+                let elemAnchor = document.querySelector(anchor_id)
+                elemAnchor.classList.add('sticky-anchor');
+                //Close fly-out menu
+                toggleMobileMenu();
+            }
+            else {
+                return;
+            }
+        });
+
+        // Code to show/hide fly-out mobile menu -->
+        document.querySelector('.item-icon').addEventListener('click', toggleMobileMenu)
+        const pageContainer = document.querySelector('.page-container');
+    
+        function toggleMobileMenu() {
+            //toggle hamburger icon
+            const elemIcon = document.querySelector('.item-icon');
+            elemIcon.classList.toggle("change");
+            const elemHTML = document.querySelector('html');
+            const elemBody = document.querySelector('body');            
+            const elemFlyOut = document.querySelector('.flyout-menu');
+
+            //if fly-out menu is currently closed, open it.
+            if (elemIcon.classList.contains('change')) {
+                elemFlyOut.classList.remove('flyout-menu-is-closed');
+                elemFlyOut.classList.add('flyout-menu-is-open');
+                elemHTML.classList.add('no-scroll');
+                elemBody.classList.add('no-scroll');
+            }    
+            //if fly-out menu is currently open, close it.
+            else {
+                elemFlyOut.classList.remove('flyout-menu-is-open');
+                elemFlyOut.classList.add('flyout-menu-is-closed');
+                elemHTML.classList.remove('no-scroll');
+                elemBody.classList.remove('no-scroll');                                
+            }
+        }
+
+        // Code for menus with transparent background
+        window.onscroll = function() {swapMenuStyle()};
+        const headerDesktop = document.querySelector('.container-menu-desktop');
+        const headerMobile = document.querySelector('.container-menu-bar-mobile');
+
+        const stickyDesktop = headerDesktop.offsetTop +300;
+        const stickyMobile = headerDesktop.offsetTop  +300;
+
+        function swapMenuStyle() {
+            if (window.pageYOffset > stickyDesktop) {
+                headerDesktop.classList.add("menu-light","menu-drop-shadow");
+                headerDesktop.classList.remove("menu-transparent");
+                headerMobile.classList.add("menu-light","menu-drop-shadow");
+                headerMobile.classList.remove("menu-transparent");
+
+            } else {
+                headerDesktop.classList.add("menu-transparent");
+                headerDesktop.classList.remove("menu-light","menu-drop-shadow");
+                headerMobile.classList.add("menu-transparent");
+                headerMobile.classList.remove("menu-light","menu-drop-shadow");
+            }
+        }
+
+    </script>
+    <!-- End JavaScript code for desktop and mobile menus -->
+
     </article>
     </main>
+
+
 
 </body>
 </html>
