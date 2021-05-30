@@ -1,42 +1,45 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-	<meta charset="utf-8">
+
+    <!-- Meta -->
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Mary Smith Web Designer - Privacy Page</title>
+    <!-- Title -->
+	<title>Laszlo Scheers - Privacy Page</title>
+
+    <!-- Description -->
 	<meta name="description" content="Privacy and Legal Statement.">	
+	<meta name="author" content="Laszlo Scheers">
 
-	<meta name="author" content="Mary Smith">
-
+    <!-- Style Sheet -->
 	<link rel="stylesheet" href="assets/css/global.css">
 
-	<!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet"> 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0D2H7V2X4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'G-G0D2H7V2X4');
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet"> 
+    
+    <!-- Link to stylesheet for Cookie Consent Popup Message -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    
     <!-- Link to icons for Font Awesome 5 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
-	<!-- Styles for Cookie Consent Popup Message  -->
-	<link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet">
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122243940-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-122243940-1');
-	</script>
-
-
 </head>
 
-
-
 <body>
-
+    
     <!-- Begin desktop menu -->
     <div class="container-menu-desktop menu-transparent menu-sticky">
         <!-- first child item -->
@@ -49,7 +52,6 @@
         </ul>
     </div>
     <!-- End desktop menu -->
-
 
     <!-- Begin mobile menu bar -->
     <div class="container-menu-bar-mobile menu-transparent menu-sticky">
@@ -214,7 +216,7 @@
 		<div class="item-3">
 			<h4>Contact</h4>
 			<p><i class="fas fa-envelope fa-fw"></i><a href="mailto:laszloluque@gmail.com">Email</a></p>
-			<p><i class="fab fa-github-square fa-fw"></i><a href="https://laszloscheers.github.io/" target="_blank">GitHub</a></p>
+			<p><i class="fab fa-github-square fa-fw"></i><a href="https://github.com/LaszloScheers/laszloscheers.github.io" target="_blank">GitHub</a></p>
 			<p><i class="fab fa-linkedin fa-fw"></i><a href="https://linkedin.com/in/laszlo-pedro-scheers-luque-5242091a6" target="_blank">Linkedin</a></p>
 		</div>
 		
@@ -300,21 +302,25 @@
 
 
     <!-- JavaScript for Cookie Consent Popup Message -->
-	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-	<script>
-	window.cookieconsent.initialise({
-	  	"palette": {
-			"popup": {
-				"background": "#000"
-			},
-			"button": {
-				"background": "#f1d600"
-			}
-		},
-	  	"content": {
-			"href": "https://ibat-web-dev.github.io/privacy.html"
-		}
-	});
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+    "palette": {
+        "popup": {
+        "background": "#eaf7f7",
+        "text": "#5c7291"
+        },
+        "button": {
+        "background": "#56cbdb",
+        "text": "#ffffff"
+        }
+    },
+    "theme": "classic",
+    "position": "bottom-right",
+    "content": {
+        "href": "privacy.html"
+    }
+    });
     </script>
     
 </body>
