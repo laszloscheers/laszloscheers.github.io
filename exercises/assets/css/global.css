@@ -3,7 +3,7 @@
 html { height: 100% }
 body { min-height: 100%; margin-left: auto; margin-right: auto }  
 img { width: 100%; height: auto; display: block }
-html { scroll-behavior: smooth; scroll-padding-top: 100px }
+html { scroll-behavior: smooth; scroll-padding-top: 92px }
 
 /* Default font and colours */
 body { font-family: 'Circular Std', sans-serif; background-color: #FFFFFF }
