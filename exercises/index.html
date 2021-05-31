@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <!-- Meta -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title -->
+    <title>Laszlo Scheers | Web Design Course</title>
+    
+    <!-- Description -->
+    <meta name="description" content="A showcase of the work throughout the IBAT College Web Design course">
+    <meta name="author" content="Laszlo Scheers">
+	
+	<!-- Style Sheet -->
+	<link href="assets/css/global.css" rel="stylesheet">
+    
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0D2H7V2X4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-G0D2H7V2X4');
+    </script>
+	
+	<!-- Link to icons for Font Awesome 5 -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+    
+    <!-- Link to stylesheet for Cookie Consent Popup Message -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+    <!-- Link to stylesheet for AOS animate on scroll library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    
+</head>
+
+
+<body>
+
+    <!-- Begin desktop menu -->
+    <div class="container-menu-desktop menu-dark menu-sticky">
+        <!-- first child item -->
+        <a href="#"><img src="assets/img/logo.png" alt="website logo"></a>
+        <!-- second child item -->
+        <ul>
+            <li><a href="#fundamentals">The fundamentals</a></li>
+            <li><a href="#examples">Web pages examples</a></li>
+            <li><a href="#box-model">The box model</a></li>
+            <li><a href="#hero">Hero blocks</a></li>
+            <li><a href="#building">Building blocks</a></li>
+        </ul>
+    </div>
+    <!-- End desktop menu -->
+
+
+    <!-- Begin mobile menu bar -->
+    <div class="container-menu-bar-mobile menu-dark menu-sticky">
+            <!-- first child -->
+            <a href="#"><img src="assets/img/logo.png" alt="website logo"></a>
+            <!-- second child -->
+            <div class="item-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    <!-- End mobile menu bar -->
+
+    <!-- Begin mobile menu slide-out options -->
+    <div class="flyout-menu flyout-menu-is-closed menu-dark">
+        <ul>
+            <li><a href="#"><u>Web Design Course</u></a></li>
+            <li><a href="#fundamentals">The fundamentals</a></li>
+            <li><a href="#examples">Web pages examples</a></li>
+            <li><a href="#box-model">The box model</a></li>
+            <li><a href="#hero">Hero blocks</a></li>
+            <li><a href="#building">Building blocks</a></li>
+        </ul>
+
+        <hr>
+
+        <h4>Contact</h4>
+        <h5><a href="tel:0899892679">0899892679</a></h5>
+
+        <h5><a href="mailto:laszloluque@gmail.com" target="_blank">laszloluque@gmail.com</a></h5>
+
+        <h4>Social Links</h4>
+        <div class="fly-out-social-icons">
+            <a href="https://github.com/LaszloScheers/laszloscheers.github.io" target="_blank"><i class="fab fa-github-square fa-fw"></i></a>
+            <a href="https://www.linkedin.com/in/laszlo-pedro-scheers-luque-5242091a6/" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a>
+        </div>
+    </div>
+    <!-- End mobile menu slide-out options -->
+
+    <!-- Begin hero block -->
+        <div class="container-flexbox container-hero-block-two-columns">
+            <div class="item-2">
+                    <h1>Putting some tricks into play</h1>
+                    <h2>This is a showcase of the web pages developed throughout the course.</h2>
+            </div>
+            <div class="item-2">
+                <img src="assets/img/hero.png" alt="hero image" class="rotate-center" width="500px" height="600px">
+            </div>
+            <div class="container-flexbox item-1">
+                <a href="#resume" class="button-arrow"><i class="fas fa-arrow-circle-down"></i></a>
+            </div>
+        </div>
+    
+    <!-- End hero block -->
+
+	<!-- Begin parent flexbox container for two-column layout (.item-2) on desktops and one-column layout on mobiles -->
+	<div class="container-flexbox bg-superlight">
+
+		<div class="item-2 margin-bottom">
+            <h2>IBAT College Diploma in Web Design</h2>
+            <p>The IBAT college diploma in web design is a ten-week learning journey that takes you from the basics of working with HTML5 and CSS3 files to building a personal portfolio website.</p>            
+		</div>
+        
+		<div class="item-2 margin-top margin-bottom" id="resume">
+            <ul class="frame">
+                <h3>Course content:</h3>
+                <li>Introduction to <b>HTML</b>, <b>CSS</b> and hosting on <b>GitHub</b>.</li>
+                <li>Working with <b>VS Code</b>, <b>colours</b>, <b>images</b> and <b>fonts</b>.</li>
+                <li>Working with <b>Google Analytics</b>, <b>the box model</b>.</li>
+                <li>Introduction to <b>responsive web design</b> and <b>CSS flexbox</b>.</li>
+                <li><b>Hero blocks</b>, <b>contact forms</b>, <b>menus</b> and <b>footers</b>.</li>
+                <li>Building your <b>personal portfolio</b> website.</li>
+            </ul>          
+		</div>
+
+	</div>
+    <!-- End parent flexbox container -->
+
+	<!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
+	<div class="container-flexbox bg-lighty">
+		<div class="item-1" id="fundamentals">
+			<h2>The fundamentals</h2>
+			<p>In this sections we learned the basics of HTML and CSS, VS Code, hosting on GitHub, working with responsive text, hyperlinks and colours.</p>
+		</div>
+    </div>
+    <!-- End parent flexbox container -->
+
+    <!-- Parent flexbox container for three-column layout (.item-col-4) on 
+	desktops and one-column layout on mobiles -->
+	<section class="container-flexbox bg-lighty">
+
+        <a href="page-1.html" class="item-col-4" data-aos="zoom-in-down" data-aos-duration="1500">
+                <img src="assets/img/a-tale.png"
+                alt="A tale of two cities" width="270" height="180"
+                srcset="assets/img/a-tale-680.png 1000w, assets/img/a-tale-250.png 360w">
+                <h3>A tale of two cities</h3>
+                <p>Some text from A Tale of Two Cities, a novel published in 1859 by Charles Dickens.</p>
+        </a>
+        <a href="page-2.html" class="item-col-4" data-aos="zoom-in-down" data-aos-duration="1500">
+            <img src="assets/img/ethically-sourced.png"
+            alt="Ethically-sourced" width="270" height="180"
+            srcset="assets/img/ethically-sourced-680.png 1000w, assets/img/ethically-sourced-250.png 360w">
+                    <h3>Ethically-sourced</h3>
+                    <p>A showcase of a web page of ethically-sourced organically-grown, high-quality cocoa.</p>
+        </a>
+        <a href="page-3.html" class="item-col-4" data-aos="zoom-in-down" data-aos-duration="1500">
+                    <img src="assets/img/purple.png"
+                    alt="Prince & purple rain" width="270" height="180"
+                    srcset="assets/img/purple-680.png 1000w, assets/img/purple-250.png 360w">
+                    <h3>Prince & purple rain</h3>
+                    <p>Some text from Wikipedia about the 1983-recorded song Purple Rain by Prince.</p>
+        </a>
+        <a href="page-4.html" class="item-col-4" data-aos="zoom-in-down" data-aos-duration="1500">
+                    <img src="assets/img/lorem.png"
+                    alt="Lorem ipsum text" width="270" height="180"
+                    srcset="assets/img/lorem-680.png 1000w, assets/img/lorem-250.png 360w">
+                    <h3>Lorem ipsum text</h3>
+                    <p>A basic web page containing some placeholder text created with Lorem Ipsum.</p>
+        </a>
+
+	</section>
+    <div class=" bg-lighty margin-bottom"></div>
+	<!-- End parent flexbox container -->
+
+    <!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
+	<div class="container-flexbox bg-thick">
+		<div class="item-1" id="examples">
+			<h2>Web pages examples</h2>
+			<p>In this sections we learned how to work with images, fonts, styling hyperlinks and how to track your visits with Google Analytics.</p>
+		</div>
+    </div>
+    <!-- End parent flexbox container -->
+
+    <!-- Parent flexbox container for three-column layout (.item-col-4) on 
+	desktops and one-column layout on mobiles -->
+	<section class="container-flexbox bg-thick">
+                <a href="page-5.html" class="item-col-4" data-aos="fade-right" data-aos-duration="1500">
+                    <img src="assets/img/van-gogh.png"
+                    alt="Vincent van Gogh" width="270" height="180"
+                    srcset="assets/img/van-gogh-680.png 1000w, assets/img/van-gogh-250.png 360w">
+                    <h3>Vincent van Gogh</h3>
+                    <p>The works are characterised by bold colours and dramatic, impulsive and expressive brushwork.</p>
+                </a>
+
+                <a href="page-6.html" class="item-col-4" data-aos="fade-right" data-aos-duration="1500">
+                    <img src="assets/img/ireland.png"
+                    alt="Irish tourism" width="270" height="180"
+                    srcset="assets/img/ireland-680.png 1000w, assets/img/ireland-250.png 360w">
+                    <h3>Irish tourism</h3>
+                    <p>The country's most popular atractions for visitors, according to the Irish Tourist Board.</p>
+                </a>
+
+                <a href="page-7.html" class="item-col-4" data-aos="fade-left" data-aos-duration="1500">
+                    <img src="assets/img/smoothies.png"
+                    alt="Smooth smoothies" width="270" height="180"
+                    srcset="assets/img/smoothies-680.png 1000w, assets/img/smoothies-250.png 360w">
+                    <h3>Smooth smoothies</h3>
+                    <p>Dublin's finest smoothie store. Offering tasty alternatives to sugary and unhealthy snacks.</p>
+                </a>
+
+                <a href="page-8.html" class="item-col-4" data-aos="fade-left" data-aos-duration="1500">
+                    <img src="assets/img/analytics.png"
+                    alt="Software analytics" width="270" height="180"
+                    srcset="assets/img/analytics-680.png 1000w, assets/img/analytics-250.png 360w">
+                    <h3>Software analytics</h3>
+                    <p>All you need to know about your website traffic, without tracking or storing visitors' personal information.</p>
+                </a>
+	</section>
+    <div class=" bg-thick margin-bottom"></div>
+	<!-- End parent flexbox container -->
+
+    <!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
+	<div class="container-flexbox bg-superlight">
+		<div class="item-1" id="box-model">
+			<h2>The box model</h2>
+			<p>In this sections we learned how to work with the box model (CSS Flexbox), panels, sections and an introduction to responsive web design.</p>
+		</div>
+    </div>
+    <!-- End parent flexbox container -->
+
+	<!-- Parent flexbox container for three-column layout (.item-col-3) on 
+	desktops and one-column layout on mobiles -->
+	<section class="container-flexbox bg-superlight">
+
+        <a href="page-9.html" class="item-col-3" data-aos="zoom-in" data-aos-duration="1500">
+            <img src="assets/img/the-box.png"
+            alt="The box model" width="270" height="180"
+            srcset="assets/img/the-box-680.png 1000w, assets/img/the-box-250.png 360w">
+			<h3>The box model</h3>
+			<p>A web page for exploring the HTML box model.</p>
+        </a>
+        <a href="page-10.html" class="item-col-3" data-aos="zoom-in" data-aos-duration="1500">
+            <img src="assets/img/panels.png"
+            alt="Web page with panels" width="270" height="180"
+            srcset="assets/img/panels-680.png 1000w, assets/img/panels-250.png 360w">
+			<h3>Web page with panels</h3>
+			<p>A sample web page of text in highighted divs with various background colour and border styles.</p>
+        </a>
+        <a href="page-11.html" class="item-col-3" data-aos="zoom-in" data-aos-duration="1500">
+            <img src="assets/img/html5.png"
+            alt="Pastel sections" width="270" height="180"
+            srcset="assets/img/html5-680.png 1000w, assets/img/html5-250.png 360w">
+			<h3>Pastel sections</h3>
+			<p>Using HTML5 section tags to create a web page with alternating dark coloured blocks.</p>
+        </a>
+
+	</section>
+    <!-- End parent flexbox container -->
+
+    <!-- Parent flexbox container for three-column layout (.item-col-3) on 
+	desktops and one-column layout on mobiles -->
+	<section class="container-flexbox bg-superlight">
+
+        <a href="page-12.html" class="item-col-3" data-aos="zoom-in" data-aos-duration="1500">
+            <img src="assets/img/html5-v2.png"
+            alt="Dark sections" width="270" height="180"
+            srcset="assets/img/html5-v2-680.png 1000w, assets/img/html5-v2-250.png 360w">
+			<h3>Dark sections</h3>
+			<p>Using HTML5 section tags to create a web page with alterating dark coloured blocks of content.</p>
+		</a>
+        <a href="page-13.html" class="item-col-3" data-aos="zoom-in" data-aos-duration="1500">
+            <img src="assets/img/html5-v3.png"
+            alt="Gradient Sections" width="270" height="180"
+            srcset="assets/img/html5-v3-680.png 1000w, assets/img/html5-v3-250.png 360w">
+            <h3>Gradient Sections</h3>
+            <p>Using HTML5 section tags to create a web page with light and dark backgrounds.</p>
+		</a>
+        <a href="page-14.html" class="item-col-3" data-aos="zoom-in" data-aos-duration="1500">
+            <img src="assets/img/responsive.png"
+            alt="Responsive grid of rows and columns" width="270" height="180"
+            srcset="assets/img/responsive-680.png 1000w, assets/img/responsive-250.png 360w">
+			<h3>Responsive grid of rows and columns</h3>
+			<p>Using CSS flexbox to create a web page with a four-column layout.</p>
+        </a>
+
+	</section>
+    <div class=" bg-superlight margin-bottom"></div>
+    <!-- End parent flexbox container -->
+
+    <!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
+	<div class="container-flexbox bg-lighty">
+		<div class="item-1" id="hero">
+			<h2>Hero blocks</h2>
+			<p>In this sections we learned how to make hero blocks with animated text, background images and videos.</p>
+		</div>
+    </div>
+    <!-- End parent flexbox container -->
+
+	<!-- Parent flexbox container for three-column layout (.item-col-3) on 
+	desktops and one-column layout on mobiles -->
+	<section class="container-flexbox bg-lighty">
+
+        <a href="hero-text.html" class="item-col-3" data-aos="zoom-out-right" data-aos-duration="2000">
+            <img src="assets/img/hero-text.png"
+            alt="Hero with animated text" width="270" height="180"
+            srcset="assets/img/hero-text-680.png 1000w, assets/img/hero-text-250.png 360w">
+			<h3>Hero with animated text</h3>
+			<p>A showcase of a hero block with animated text from "animista.net".</p>
+		</a>
+
+		<a href="hero-image.html" class="item-col-3" data-aos="zoom-out-right" data-aos-duration="2500">
+            <img src="assets/img/hero-image.png"
+            alt="Hero with image" width="270" height="180"
+            srcset="assets/img/hero-image-680.png 1000w, assets/img/hero-image-250.png 360w">
+			<h3>Hero with image</h3>
+			<p>Using images and a linear gradient to fade the image.</p>
+		</a>
+
+		<a href="hero-video.html" class="item-col-3" data-aos="zoom-out-right" data-aos-duration="3000">
+            <img src="assets/img/hero-video.png"
+            alt="Hero with video" width="270" height="180"
+            srcset="assets/img/hero-video-680.png 1000w, assets/img/hero-video-250.png 360w">
+			<h3>Hero with video</h3>
+			<p>Working with the video tag on loop and a linear gradient to fade the background.</p>
+		</a
+        >
+	</section>
+    <div class=" bg-lighty margin-bottom"></div>
+    <!-- End parent flexbox container -->
+
+    <!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
+	<div class="container-flexbox bg-thick">
+		<div class="item-1 margin-top" id="building">
+			<h2>Building blocks</h2>
+			<p>In this sections we learned the main building blocks for a web page like: buttons and icons, Sign-up Forms, menus, footers and privacy pop-up message with privacy web page.</p>
+		</div>
+    </div>
+    <!-- End parent flexbox container -->
+
+    <!-- Parent flexbox container for three-column layout (.item-col-4) on 
+	desktops and one-column layout on mobiles -->
+	<section class="container-flexbox bg-thick">
+
+        <a href="buttons-icons.html" class="item-col-4" data-aos="zoom-out-left" data-aos-duration="1500">
+            <img src="assets/img/buttons&icons.png"
+            alt="Buttons and icons" width="270" height="180"
+            srcset="assets/img/buttons&icons-680.png 1000w, assets/img/buttons&icons-250.png 360w">
+            <h3>Buttons and icons</h3>
+            <p>A sample web page with a range of buttons styles and Font Awesome icons.</p>
+        </a>
+
+        <a href="forms.html" class="item-col-4" data-aos="zoom-out-left" data-aos-duration="2000">
+            <img src="assets/img/email-form.png"
+            alt="Email sign-up form" width="270" height="180"
+            srcset="assets/img/email-form-680.png 1000w, assets/img/email-form-250.png 360w">
+            <h3>Email sign-up form</h3>
+            <p>A sample web page with a form for capturing an user's email address with "Formspree.io".</p>
+        </a>
+
+        <a href="menus-sandbox.html" class="item-col-4" data-aos="zoom-out-left" data-aos-duration="2500">
+            <img src="assets/img/menus.png"
+            alt="Menus and footers" width="270" height="180"
+            srcset="assets/img/menus-680.png 1000w, assets/img/menus-250.png 360w">
+            <h3>Menus and footers</h3>
+            <p>A basic menu bar that turns into a flyout menu when used in mobiles and adding footer to your web site.</p>
+        </a>
+
+        <a href="privacy-template.html" class="item-col-4" data-aos="zoom-out-left" data-aos-duration="3000">
+            <img src="assets/img/privacy.png"
+            alt="Privacy messages" width="270" height="180"
+            srcset="assets/img/privacy-680.png 1000w, assets/img/privacy-250.png 360w">
+            <h3>Privacy messages</h3>
+            <p>Privacy and cookie consent message using Osano Open Source Cookies Pop-up.</p>
+        </a>
+
+	</section>
+    <div class="bg-thick margin-bottom"></div>
+	<!-- End parent flexbox container -->
+
+	<!-- Begin HTML footer -->
+
+	<footer class="container-footer">
+
+		<div class="item-3">
+
+			<h4>Site map</h4>
+            <p><i class="fas fa-arrow-up fa-fw"></i><a href="#">Back to top</a></p>
+			<p><i class="fas fa-home fa-fw"></i><a href="../index.html">My Home Page</a></p>
+			<p><i class="fas fa-file-alt fa-fw"></i><a href="../portfolio/index.html">My Portfolio</a></p>
+			<p><i class="fas fa-lock fa-fw"></i><a href="../privacy.html">Privacy</a></p>
+		
+		</div>
+
+		<div class="item-3">
+			<h4>About me</h4>
+			<p>Hi, I'm Laszlo Scheers a front-ent web developer based in Dublin, Ireland.</p>
+		</div>
+
+		<div class="item-3">
+			<h4>Contact</h4>
+			<p><i class="fas fa-envelope fa-fw"></i><a href="mailto:laszloluque@gmail.com">laszloluque@gmail.com</a></p>
+			<p><i class="fab fa-github-square fa-fw"></i><a href="https://github.com/LaszloScheers/laszloscheers.github.io" target="_blank">GitHub</a></p>
+			<p><i class="fab fa-linkedin fa-fw"></i><a href="https://www.linkedin.com/in/laszlo-pedro-scheers-luque-5242091a6/" target="_blank">Linkedin</a></p>
+		</div>
+		
+	</footer>
+	
+	<!-- End HTML footer -->
+
+    <!-- Begin JavaScript code for AOS animate on scroll library -->
+    <script>
+        AOS.init();
+    </script>
+    <!-- End JavaScript code for AOS animate on scroll library -->
+
+	<!-- Begin JavaScript code for desktop and mobile menus -->
+    <script>
+
+        // Code to detect click of option within fly-out menu
+        let specifiedElement = document.querySelector('.flyout-menu');
+        document.addEventListener('click', function(event) {
+            var isClickInside = specifiedElement.contains(event.target);
+            //If link is within current web page
+            if (isClickInside) {
+                //Get id of anchor
+                let anchor_id = window.location.hash;
+                //Add extra spacing above anchor
+                let elemAnchor = document.querySelector(anchor_id)
+                elemAnchor.classList.add('sticky-anchor');
+                //Close fly-out menu
+                toggleMobileMenu();
+            }
+            else {
+                return;
+            }
+        });
+
+	    // Code to show/hide fly-out mobile menu -->
+        document.querySelector('.item-icon').addEventListener('click', toggleMobileMenu)
+        const pageContainer = document.querySelector('.page-container');
+   
+        function toggleMobileMenu() {
+            //toggle hamburger icon
+            const elemIcon = document.querySelector('.item-icon');
+            elemIcon.classList.toggle("change");
+            const elemHTML = document.querySelector('html');
+            const elemBody = document.querySelector('body');            
+            const elemFlyOut = document.querySelector('.flyout-menu');
+
+            //if fly-out menu is currently closed, open it.
+            if (elemIcon.classList.contains('change')) {
+                elemFlyOut.classList.remove('flyout-menu-is-closed');
+                elemFlyOut.classList.add('flyout-menu-is-open');
+                elemHTML.classList.add('no-scroll');
+                elemBody.classList.add('no-scroll');
+            }    
+            //if fly-out menu is currently open, close it.
+            else {
+                elemFlyOut.classList.remove('flyout-menu-is-open');
+                elemFlyOut.classList.add('flyout-menu-is-closed');
+                elemHTML.classList.remove('no-scroll');
+                elemBody.classList.remove('no-scroll');                                
+            }
+        }
+
+		// Code for menus with transparent background
+		window.onscroll = function() {swapMenuStyle()};
+		const headerDesktop = document.querySelector('.container-menu-desktop');
+		const headerMobile = document.querySelector('.container-menu-bar-mobile');
+
+		const stickyDesktop = headerDesktop.offsetTop +300;
+		const stickyMobile = headerDesktop.offsetTop  +300;
+
+		function swapMenuStyle() {
+			if (window.pageYOffset > stickyDesktop) {
+				headerDesktop.classList.add("menu-light","menu-drop-shadow");
+				headerDesktop.classList.remove("menu-dark");
+				headerMobile.classList.add("menu-light","menu-drop-shadow");
+				headerMobile.classList.remove("menu-dark");
+
+			} else {
+				headerDesktop.classList.add("menu-dark");
+				headerDesktop.classList.remove("menu-light","menu-drop-shadow");
+				headerMobile.classList.add("menu-dark");
+				headerMobile.classList.remove("menu-light","menu-drop-shadow");
+			}
+		}
+
+	</script>
+	<!-- End JavaScript code for desktop and mobile menus -->
+
+    <!-- JavaScript for Cookie Consent Popup Message -->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#237afc"
+        },
+        "button": {
+          "background": "#fff",
+          "text": "#237afc"
+        }
+      },
+      "position": "bottom-right",
+      "content": {
+        "href": "../privacy.html"
+      }
+    });
+    </script>
+    <!-- End JavaScript code for Cookie Consent Popup Message -->
+
+</body>
+
+</html>
