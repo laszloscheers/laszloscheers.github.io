@@ -421,7 +421,7 @@ a[href^=tel] { text-decoration: none; color: red }
 
 /* background colour */
 .menu-dark { 
-	background-color: red; 
+	background-color: #E8AF15; 
 	transition: all .5s ease-in-out
 }
 
@@ -432,7 +432,7 @@ a[href^=tel] { text-decoration: none; color: red }
 /* cta button */
 .menu-dark ul li a.btn-cta:link,
 .menu-dark ul li a.btn-cta:visited { 
-    background-color: red;
+    background-color: #1B7ACB;
     color: #fff;
     border-color:#fff
 }
@@ -550,7 +550,7 @@ a[href^=tel] { text-decoration: none; color: #fff }
 	display: flex;
 	justify-content: space-between;
    flex-wrap: wrap;
-   background-color:#2c3e50
+   background-color:#E8AF15
 }
 
 /* Desktop footer - inside padding  */
