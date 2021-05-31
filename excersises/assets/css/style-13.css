@@ -157,7 +157,7 @@ section p {
 
 /* Dark blue section background: h1 headings and p text paragraphs */
 .bg-blue-dark h1 { color: #fff }
-.bg-blue-dark p  { color: #fff }
+.bg-blue-dark p, .bg-blue-dark a  { color: #fff }
 
 
 /* ======================= UTILITY STYLES OR CLASSES ======================== */

@@ -12,6 +12,19 @@
     
     <link href="assets/css/menus-sandbox.css" rel="stylesheet">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0D2H7V2X4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-G0D2H7V2X4');
+    </script>
+
+    <!-- Link to stylesheet for Cookie Consent Popup Message -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
     <!-- Link to icons for Font Awesome 5 -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">  
 
@@ -23,8 +36,8 @@
     <!-- Begin desktop menu -->
     <nav class="container-menu-desktop menu-light menu-drop-shadow menu-sticky">
         <!-- first child item -->
-        <a href="../../index.html">
-            <img src="assets/img/menus-logo.png" alt="website logo">
+        <a href="#">
+            <img src="assets/img/logo.png" alt="website logo">
         </a>   
     <!-- second child item -->
     <ul>
@@ -40,7 +53,7 @@
     <!-- Begin mobile menu bar -->
     <div class="container-menu-bar-mobile menu-light menu-sticky">
             <!-- first child -->
-            <a href="../../index-1.html"><img src="assets/img/menus-logo.png" alt="website logo"></a>
+            <a href="#"><img src="assets/img/logo.png" alt="website logo"></a>
             <!-- second child -->
             <div class="item-icon">
                 <div class="bar1"></div>
@@ -128,6 +141,34 @@
 
 	<!-- End of page main content-->
 
+    <footer class="container-footer">
+
+		<div class="item-3">
+
+			<h4>Site map</h4>
+            <p><i class="fas fa-arrow-up fa-fw"></i><a href="#">Back to top</a></p>
+			<p><i class="fas fa-home fa-fw"></i><a href="../index.html">My Home Page</a></p>
+			<p><i class="fas fa-file-alt fa-fw"></i><a href="../portfolio/index.html">My Portfolio</a></p>
+			<p><i class="fas fa-lock fa-fw"></i><a href="../privacy.html">Privacy</a></p>
+		
+		</div>
+
+		<div class="item-3">
+			<h4>About me</h4>
+			<p>Hi, I'm Laszlo Scheers a front-ent web developer based in Dublin, Ireland.</p>
+		</div>
+
+		<div class="item-3">
+			<h4>Contact</h4>
+			<p><i class="fas fa-envelope fa-fw"></i><a href="mailto:laszloluque@gmail.com">laszloluque@gmail.com</a></p>
+			<p><i class="fab fa-github-square fa-fw"></i><a href="https://github.com/LaszloScheers/laszloscheers.github.io" target="_blank">GitHub</a></p>
+			<p><i class="fab fa-linkedin fa-fw"></i><a href="https://www.linkedin.com/in/laszlo-pedro-scheers-luque-5242091a6/" target="_blank">Linkedin</a></p>
+		</div>
+		
+	</footer>
+	
+	<!-- End HTML footer -->
+
 
 	<!-- Begin JavaScript code for desktop and mobile menus -->
     <script>
@@ -190,20 +231,41 @@
 		function swapMenuStyle() {
 			if (window.pageYOffset > stickyDesktop) {
 				headerDesktop.classList.add("menu-light","menu-drop-shadow");
-				headerDesktop.classList.remove("menu-transparent");
+				headerDesktop.classList.remove("menu-dark");
 				headerMobile.classList.add("menu-light","menu-drop-shadow");
-				headerMobile.classList.remove("menu-transparent");
+				headerMobile.classList.remove("menu-dark");
 
 			} else {
-				headerDesktop.classList.add("menu-transparent");
+				headerDesktop.classList.add("menu-dark");
 				headerDesktop.classList.remove("menu-light","menu-drop-shadow");
-				headerMobile.classList.add("menu-transparent");
+				headerMobile.classList.add("menu-dark");
 				headerMobile.classList.remove("menu-light","menu-drop-shadow");
 			}
 		}
 
 	</script>
 	<!-- End JavaScript code for desktop and mobile menus -->
+
+    <!-- JavaScript for Cookie Consent Popup Message -->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+        "palette": {
+        "popup": {
+            "background": "#237afc"
+        },
+        "button": {
+            "background": "#fff",
+            "text": "#237afc"
+        }
+        },
+        "position": "bottom-right",
+        "content": {
+        "href": "../privacy.html"
+        }
+    });
+    </script>
+    <!-- End JavaScript code for Cookie Consent Popup Message -->
 
 
 </body>

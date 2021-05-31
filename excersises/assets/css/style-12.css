@@ -140,7 +140,7 @@ section h1 {
 }
 
 /* Sections: text paragraphs */
-section p {
+section p, section a {
     font-family: 'PT Sans', sans-serif;
     font-size: calc(17px + (20 - 17) * ((100vw - 320px) / (1140 - 320)));
     color: #fff;
