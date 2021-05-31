@@ -128,8 +128,7 @@ p, li { color: #343434}
 .container-menu-desktop ul li a.btn-cta i,
 .flyout-menu            ul li a.btn-cta i { margin-right: 8px; font-size: 90% }
 
-/* on mobiles, prevent scrolling outside flyout menu */
-.no-scroll { overflow: hidden }
+
 
 .menu-drop-shadow { box-shadow: 0 1px 10px #888 }
 
