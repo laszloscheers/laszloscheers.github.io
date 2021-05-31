@@ -3,7 +3,7 @@
 html { height: 100% }
 body { min-height: 100%; margin-left: auto; margin-right: auto }  
 img { width: 100%; height: auto; display: block }
-html { scroll-behavior: smooth; scroll-padding-top: 92px }
+html { scroll-behavior: smooth; scroll-padding-top: 120px }
 
 /* Default font and colours */
 body { font-family: 'Circular Std', sans-serif; background-color: #FFFFFF }
@@ -66,6 +66,7 @@ p, li { color: #343434}
     .flyout-menu.menu-light,
     .flyout-menu.menu-light { display: none }
 }
+
 
 /* sticks menu to top of desktop and/or mobile screen */
 .menu-sticky { position: fixed; top: 0; left: 0; right: 0; }
@@ -451,8 +452,8 @@ a[href^=tel] { text-decoration: none; color: #FFFFFF }
 /*Animation*/
 
 .rotate-center {
-	-webkit-animation: rotate-center 0.5s ease-in-out 0.1s 1 both;
-	        animation: rotate-center 0.5s ease-in-out 0.1s 1 both;
+	-webkit-animation: rotate-center 0.7s ease-in-out 0.2s 1 both;
+	        animation: rotate-center 0.7s ease-in-out 0.2s 1 both;
 }
 
 /* ----------------------------------------------
@@ -691,12 +692,14 @@ a.button-arrow:hover{
     background-color: #fff;
     min-height: 390px;
 }
-@media all and (max-width:1700px) {
+@media (min-width:1700px) {
     .container-flexbox .item-col-4{ min-height: 400px; }
 }
-
-@media all and (max-width:1200px) {
-    .container-flexbox .item-col-4{ min-height: 380px; }
+@media (min-width:1660px) {
+    .container-flexbox .item-col-4{ min-height: 350px; }
+}
+@media (min-width:1300px) {
+    .container-flexbox .item-col-4{ min-height: 350px; }
 }
 
 .container-flexbox .item-col-4:hover{
@@ -734,7 +737,7 @@ a.button-arrow:hover{
 }
 
 /* Tablets - 3 columns */
-@media (max-width:1000px) { 
+@media (max-width:1200px) { 
 	.container-flexbox .item-col-4 { 
         align-items: center;
 		width: 100%;
@@ -761,12 +764,11 @@ a.button-arrow:hover{
     align-items: center !important;
 }
 
-@media all and (max-width:1700px) {
-    .container-flexbox .item-col-3{ min-height: 400px; }
+@media (min-width:1700px) {
+    .container-flexbox .item-col-3 { min-height: 400px; }
 }
-
-@media all and (max-width:1200px) {
-    .container-flexbox .item-col-3{ min-height: 350px; }
+@media (min-width:1300px) {
+    .container-flexbox .item-col-3 { min-height: 350px; }
 }
 
 .container-flexbox .item-col-3:hover{
@@ -805,7 +807,7 @@ a.button-arrow:hover{
 	}
 }
 /* Tablets - 3 columns */
-@media (max-width:1000px) { 
+@media (max-width:1200px) { 
 	.container-flexbox .item-col-3 { 
         align-items: center;
 		width: 100%;
