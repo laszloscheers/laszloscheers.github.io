@@ -3,7 +3,7 @@
 html { height: 100% }
 body { min-height: 100%; margin-left: auto; margin-right: auto }  
 img { width: 100%; height: auto; display: block }
-html { scroll-behavior: smooth; scroll-padding-top: 120px }
+html { scroll-behavior: smooth; scroll-padding-top: 92px }
 
 /* Default font and colours */
 body { font-family: 'Circular Std', sans-serif; background-color: #FFFFFF }
@@ -451,8 +451,8 @@ a[href^=tel] { text-decoration: none; color: #FFFFFF }
 /*Animation*/
 
 .rotate-center {
-	-webkit-animation: rotate-center 0.7s ease-in-out 0.2s 1 both;
-	        animation: rotate-center 0.7s ease-in-out 0.2s 1 both;
+	-webkit-animation: rotate-center 0.5s ease-in-out 0.1s 1 both;
+	        animation: rotate-center 0.5s ease-in-out 0.1s 1 both;
 }
 
 /* ----------------------------------------------
