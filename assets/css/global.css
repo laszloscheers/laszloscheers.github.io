@@ -5,9 +5,9 @@ body { min-height: 100%; max-width: 1950px; margin-left: auto; margin-right: aut
 img { width: 100%; height: auto; display: block }
 
 /* Default font and colours */
-body { font-family: 'product_sansregular', sans-serif; background-color: #c7f0ff }
-h1, h2, h3 { color: #E8AF15; font-family:'Open Sans', sans-serif }
-p, li { color: #343434; font-family:'Open Sans', serif }
+body { font-family: 'Circular Std', serif; background-color: #c7f0ff }
+h1, h2, h3 { color: #E8AF15; }
+p, li { color: #343434; }
 
 /* Begin menu styles */
 
@@ -16,22 +16,29 @@ p, li { color: #343434; font-family:'Open Sans', serif }
 /* ======= FONT  ======== */
 
 @font-face {
-    font-family: 'product_sansbold';
-    src: url('https://laszloscheers.github.io/assets/fonts/product_sans_bold-webfont.woff2') format('woff2'),
-         url('https://laszloscheers.github.io/assets/fonts/product_sans_bold-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Circular Std';
+    src: url('https://laszloscheers.github.io/excersises/assets/fonts/CircularStd-Medium.eot');
+    src: local('Circular Std Medium'), local('CircularStd-Medium'),
+        url('https://laszloscheers.github.io/excersises/assets/fonts/CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+        url('https://laszloscheers.github.io/excersises/assets/fonts/CircularStd-Medium.woff2') format('woff2'),
+        url('https://laszloscheers.github.io/excersises/assets/fonts/CircularStd-Medium.woff') format('woff'),
+        url('https://laszloscheers.github.io/excersises/assets/fonts/CircularStd-Medium.ttf') format('truetype');
+    font-weight: 500;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'product_sansregular';
-    src: url('https://laszloscheers.github.io/assets/fonts/product_sans_regular-webfont.woff2') format('woff2'),
-         url('https://laszloscheers.github.io/assets/fonts/product_sans_regular-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Circular Std';
+    src: url('https://laszloscheers.github.io/excersises/assets/fonts/CircularStd-Bold.eot');
+    src: local('Circular Std Bold'), local('CircularStd-Bold'),
+        url('https://laszloscheers.github.io/excersises/assets/fonts/CircularStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://laszloscheers.github.io/excersises/assets/fonts/CircularStd-Bold.woff2') format('woff2'),
+        url('https://laszloscheers.github.io/excersises/assets/fonts/CircularStd-Bold.woff') format('woff'),
+        url('https://laszloscheers.github.io/excersises/assets/fonts/CircularStd-Bold.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;
-
 }
+
 
 /* ======= FONT END ======== */
 
@@ -134,7 +141,6 @@ p, li { color: #343434; font-family:'Open Sans', serif }
 /* style text for links and cta button  */
 .container-menu-desktop ul li a {
     font-size: calc(15px + (19 - 15) * ((100vw - 320px)/(1600 - 320)));
-    font-family: 'Open Sans', sans-serif;
     /* font-weight:bold */
     /* text-transform: uppercase */
 }
