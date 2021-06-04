@@ -26,22 +26,23 @@
 
         gtag('config', 'G-G0D2H7V2X4');
     </script>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet"> 
-    
-    <!-- Link to stylesheet for Cookie Consent Popup Message -->
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-    
+       
     <!-- Link to icons for Font Awesome 5 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <!-- Link to stylesheet for Cookie Consent Popup Message -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+    <!-- Link to stylesheet for AOS animate on scroll library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
 <body class="contact-page">
 
     <!-- Begin desktop menu -->
-    <div class="container-menu-desktop menu-transparent menu-sticky">
+    <div class="container-menu-desktop menu-light menu-sticky">
         <!-- first child item -->
         <a href="../index.html"><img src="../assets/img/website-logo.png" alt="website logo"></a>
         <!-- second child item -->
@@ -55,7 +56,7 @@
 
 
     <!-- Begin mobile menu bar -->
-    <div class="container-menu-bar-mobile menu-transparent menu-sticky">
+    <div class="container-menu-bar-mobile menu-light menu-sticky">
             <!-- first child -->
             <a href="index.html"><img src="../assets/img/website-logo.png" alt="website logo"></a>
             <!-- second child -->
@@ -76,11 +77,6 @@
         </ul>
 
         <hr>
-        <h4>About Me</h4>
-        <div class="fly-out-profile-box">
-            <img src="../assets/img/profile-pic.jpg" alt="Laszlo Scheers">
-            <p>Hi, I'm <b>Laszlo Scheers</b>, a front-ent web developer based in Dublin, Ireland.</p>
-        </div>
    
         <h4>Contact</h4>
         <p>Have a project you'd like to discuss? Let's make something great together!</p>
@@ -99,25 +95,16 @@
         <p>&nbsp;</p>
     </div>
     <!-- End mobile menu slide-out options -->
-		
-	<!-- Begin hero block -->
-	<div class="container-hero-block contact-page">
-		<div class="slide-in-top">
-			<h1>Laszlo Scheers</h1>
-			<h2>Let's work together</h2>
-		</div>
-	</div>
-	<!-- End hero block -->
 	
 
     <!-- Begin container for contact form -->
         
-    <div class="container-contact-form">
+    <div class="container-contact-form" data-aos="zoom-in-down" data-aos-duration="700">
         <h3>Get in touch</h3>
-        <p>Use the form below to let me know a little more about your objectives and I'll get back to you.</p>
+        <p>Use the form below to let me know a little more about your projects and I'll get back to you.</p>
         
         <!-- Contact form starts here -->
-        <form id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/f/xbjqlpbw">
+        <form id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/f/moqyjebk">
 
             <!-- Begin contact form fields -->
 
@@ -168,7 +155,7 @@
 
 		<div class="item-3">
 			<h4>About Me</h4>
-			<p>Hi, I'm Laszlo Scheers. I'm a front-end web developer.</p>
+			<p>Hi, I'm Laszlo Scheers. I'm a student of front-end web developer.</p>
 		</div>
 
 		<div class="item-3">
@@ -182,6 +169,18 @@
 	
 	<!-- End HTML footer -->
 
+    <!-- Begin JavaScript code for AOS animate on scroll library -->
+    <script>
+        AOS.init({
+        disable: function() {
+        var maxWidth = 977;
+        return window.innerWidth < maxWidth;
+        }
+        });
+
+    </script>
+    
+    <!-- End JavaScript code for AOS animate on scroll library -->
 
 	<!-- Begin JavaScript code for desktop and mobile menus -->
     <script>
@@ -232,30 +231,6 @@
                 elemBody.classList.remove('no-scroll');                                
             }
         }
-
-	// Code for menus with transparent background
-    window.onscroll = function() {swapMenuStyle()};
-		const headerDesktop = document.querySelector('.container-menu-desktop');
-		const headerMobile = document.querySelector('.container-menu-bar-mobile');
-
-		const stickyDesktop = headerDesktop.offsetTop +300;
-		const stickyMobile = headerDesktop.offsetTop  +300;
-
-		function swapMenuStyle() {
-			if (window.pageYOffset > stickyDesktop) {
-				headerDesktop.classList.add("menu-light","menu-drop-shadow");
-				headerDesktop.classList.remove("menu-transparent");
-				headerMobile.classList.add("menu-light","menu-drop-shadow");
-				headerMobile.classList.remove("menu-transparent");
-
-			} else {
-				headerDesktop.classList.add("menu-transparent");
-				headerDesktop.classList.remove("menu-light","menu-drop-shadow");
-				headerMobile.classList.add("menu-transparent");
-				headerMobile.classList.remove("menu-light","menu-drop-shadow");
-			}
-		}
-
 	</script>
 	<!-- End JavaScript code for desktop and mobile menus -->
 
@@ -264,23 +239,22 @@
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
     <script>
     window.cookieconsent.initialise({
-    "palette": {
+      "palette": {
         "popup": {
-        "background": "#eaf7f7",
-        "text": "#5c7291"
+          "background": "#237afc"
         },
         "button": {
-        "background": "#56cbdb",
-        "text": "#ffffff"
+          "background": "#fff",
+          "text": "#237afc"
         }
-    },
-    "theme": "classic",
-    "position": "bottom-right",
-    "content": {
-        "href": "privacy.html"
-    }
+      },
+      "position": "bottom-right",
+      "content": {
+        "href": "../privacy.html"
+      }
     });
     </script>
+    <!-- End JavaScript code for Cookie Consent Popup Message -->
     
 </body>
 </html>
