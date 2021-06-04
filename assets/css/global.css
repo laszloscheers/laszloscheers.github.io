@@ -5,7 +5,7 @@ body { min-height: 100%; max-width: 1950px; margin-left: auto; margin-right: aut
 img { width: 100%; height: auto; display: block }
 
 /* Default font and colours */
-body { font-family: 'Circular Std', serif; background-color: #c7f0ff }
+body { font-family: 'Circular Std', serif; background-color: #a0ddff }
 h1, h2, h3 { color: #E8AF15; }
 p, li { color: #343434; }
 
@@ -929,7 +929,7 @@ img.image-circle {
 /* All screens */
 .container-contact-form { 
 	text-align: center; 
-	background-color: #c7f0ff;  
+	background-color: #a0ddff;  
 }
 
 /* Desktop */
@@ -1070,7 +1070,11 @@ img.image-circle {
 	display: flex;
 	justify-content: space-between;
    flex-wrap: wrap;
-   background-color:#4090FF
+   background-color:#4090ff
+}
+
+#oposite { 
+   background-color:#e8af15 !important;
 }
 
 /* Desktop footer - inside padding  */
