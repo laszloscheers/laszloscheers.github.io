@@ -13,7 +13,7 @@ input, button, textarea, select { font: inherit }
 /* ================= ENDS ================ */
 
 /* Desktops */
-@media (min-width: 1080px) { main { padding: 4% 20%; } }
+@media (min-width: 1080px) { main { padding: 4% 15%; } }
 
 
 /* Mobiles */
@@ -35,7 +35,7 @@ h1 {
     letter-spacing: -1px;
     text-align: center;
     margin-top: 12%;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
 
 /* Small headings */
@@ -43,7 +43,7 @@ h2 {
     font-size: calc(18px + (26 - 18) * ((100vw - 320px) /(1600 - 320)));
     color:#3434B0;
     line-height: 1.5;
-    margin-bottom: 42px;
+    margin-bottom: 10%;
 }
 
 /* Smaller headings */
@@ -76,6 +76,7 @@ article img {
     position: relative;
     width: 100%;
     margin-bottom: 12%;
+    box-shadow: 8px 10px 8px #888; 
  }
  
  .video-container::after {

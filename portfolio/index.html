@@ -26,15 +26,16 @@
 
         gtag('config', 'G-G0D2H7V2X4');
     </script>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet"> 
-    
+        
     <!-- Link to icons for Font Awesome 5 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     
     <!-- Link to stylesheet for Cookie Consent Popup Message -->
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+    <!-- Link to stylesheet for AOS animate on scroll library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
 </head>
@@ -45,7 +46,7 @@
 
 
     <!-- Begin desktop menu -->
-    <div class="container-menu-desktop menu-dark menu-sticky">
+    <div class="container-menu-desktop menu-transparent menu-sticky">
         <!-- first child item -->
         <a href="../index.html"><img src="../assets/img/website-logo.png" alt="website logo"></a>
         <!-- second child item -->
@@ -59,7 +60,7 @@
 
 
     <!-- Begin mobile menu bar -->
-    <div class="container-menu-bar-mobile menu-dark menu-sticky">
+    <div class="container-menu-bar-mobile menu-transparent menu-sticky">
             <!-- first child -->
             <a href="../index.html"><img src="../assets/img/website-logo.png" alt="website logo"></a>
             <!-- second child -->
@@ -80,11 +81,6 @@
         </ul>
 
         <hr>
-        <h4>About Me</h4>
-        <div class="fly-out-profile-box">
-            <img src="../assets/img/profile-pic.jpg" alt="Laszlo Scheers">
-            <p>Hi, I'm <b>Laszlo Scheers</b>, a front-ent web developer based in Dublin, Ireland.</p>
-        </div>
    
         <h4>Contact</h4>
         <p>Have a project you'd like to discuss? Let's make something great together!</p>
@@ -106,9 +102,8 @@
 		
 	<!-- Begin hero block -->
 	<div class="container-hero-block portfolio-page">
-		<div class="slide-in-top">
-			<h1>Laszlo Scheers</h1>
-			<h2>Portfolio</h2>
+		<div class="scale-up-top">
+			<h1>Portfolio</h1>
 		</div>
 	</div>
 	<!-- End hero block -->
@@ -117,12 +112,9 @@
 	<!-- Begin single-column container -->
 
 		<!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
-        <div class="container-flexbox bg-pastel-green">
-            <div class="item-1">
-                <h2>I have been busy</h2>
-                <p>Below you can see a selection of my web design and development work.</p>
-                
-                <p>Have a project you'd like to discuss? <a href="../contact/index.html" class="fancy-link">Let's make something great together!</a></p>
+        <div class="container-flexbox">
+            <div class="item-2">
+                <p>Below you can see a selection of my web development work.</p>
             </div>
         </div><!-- End parent flexbox container -->
         
@@ -130,50 +122,46 @@
         <!-- Begin parent flexbox container for three-column layout (.item-3) on desktops and one-column layout on mobiles -->
         <div class="container-flexbox">
     
-            <div class="item-3">
+            <div class="item-3" data-aos="fade-down" data-aos-duration="1500">
                 <a href="smoothies/index.html"><img src="../assets/img/project-smoothie.jpg"  alt="Project: Smooth Smoothies"></a>
                 <h3><a href="smoothies/index.html" class="fancy-link">Smooth Smoothies</a></h3>
-                <p>Offering tasty alternatives to sugary and unhealthy snacks for busy, on-the-go, on-trend professionals.</p>
-                <a href="smoothies/index.html" class="button button-solid button-soft">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>             
+                <p>Offering tasty alternatives to sugary and unhealthy snacks for busy, on-the-go, on-trend professionals.</p>            
             </div>
 
-            <div class="item-3">
+            <div class="item-3" data-aos="fade-down" data-aos-duration="1500">
                 <a href="software/index.html"><img src="../assets/img/project-software.png"  alt="Project: Software Analytics"></a>
                 <h3><a href="software/index.html" class="fancy-link">Software Analytics</a></h3>
                 <p>Everything you need to know about your website traffic, without spying on visitors' personal information.</p>
-                <a href="software/index.html" class="button button-solid button-soft">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>           
             </div>            
 
-            <div class="item-3">
+            <div class="item-3" data-aos="fade-down" data-aos-duration="1500">
                 <a href="travel/index.html"><img src="../assets/img/project-travel.jpg"  alt="Project: Travel Agency"></a>
                 <h3><a href="travel/index.html" class="fancy-link">IBAT Tours</a></h3>
                 <p>Need a holiday? IBAT Tours provides happy holiday experiences at affordable prices.</p>
-                <a href="travel/index.html" class="button button-solid button-soft">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>               
             </div>
     
-            <div class="item-3">
+            <div class="item-3" data-aos="fade-up" data-aos-duration="1500">
                 <a href="web-agency/index.html"><img src="../assets/img/project-web-agency.png"  alt="Project: Web Agency"></a>
                 <h3><a href="web-agency/index.html" class="fancy-link">Web Agency</a></h3>
                 <p>Transforming great products and services into successful online brands and compelling digital  experiences.</p>
-                <a href="web-agency/index.html" class="button button-solid button-soft">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>             
             </div>
     
-            <div class="item-3">
+            <div class="item-3" data-aos="fade-up" data-aos-duration="1500">
                 <a href="hero/index.html"><img src="../assets/img/project-hero.jpg"  alt="Project: Hero Showcases"></a>
                 <h3><a href="hero/index.html" class="fancy-link">Hero Showcase</a></h3>
                 <p>Examples of responsive web page hero sections with various fonts, gradients, background images and animations.</p>
-                <a href="hero/index.html" class="button button-solid button-soft">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>               
             </div>
     
-            <div class="item-3">
+            <div class="item-3" data-aos="fade-up" data-aos-duration="1500">
                 <a href="van-gogh/index.html"><img src="../assets/img/project-van-gogh.png" class="image-shadow" alt="Porfolio: Vincent van Gogh"></a>
                 <h3><a href="van-gogh/index.html" class="fancy-link">Vincent van Gogh</a></h3>
                 <p>A web page about artist Vincent van Gogh with an embedded and responsive video from YouTube.</p>
-                <a href="van-gogh/index.html" class="button button-solid button-soft">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>     
             </div>
 
     
-        </div><!-- End parent flexbox container -->
+        </div>
+
+    <!-- End parent flexbox container -->
 
 	<!-- Begin HTML footer -->
 
@@ -190,7 +178,7 @@
 
 		<div class="item-3">
 			<h4>About Me</h4>
-			<p>Hi, I'm Laszlo Scheers. I'm a front-end web developer.</p>
+			<p>Hi, I'm Laszlo Scheers. I'm a student of front-end web developer.</p>
 		</div>
 
 		<div class="item-3">
@@ -204,6 +192,18 @@
 	
 	<!-- End HTML footer -->
 
+    <!-- Begin JavaScript code for AOS animate on scroll library -->
+    <script>
+        AOS.init({
+        disable: function() {
+        var maxWidth = 977;
+        return window.innerWidth < maxWidth;
+        }
+        });
+
+    </script>
+    
+    <!-- End JavaScript code for AOS animate on scroll library -->
 
 	<!-- Begin JavaScript code for desktop and mobile menus -->
     <script>
@@ -255,7 +255,7 @@
             }
         }
 
-	// Code for menus with dark background
+	// Code for menus with transparent background
     window.onscroll = function() {swapMenuStyle()};
 		const headerDesktop = document.querySelector('.container-menu-desktop');
 		const headerMobile = document.querySelector('.container-menu-bar-mobile');
@@ -266,14 +266,14 @@
 		function swapMenuStyle() {
 			if (window.pageYOffset > stickyDesktop) {
 				headerDesktop.classList.add("menu-light","menu-drop-shadow");
-				headerDesktop.classList.remove("menu-dark");
+				headerDesktop.classList.remove("menu-transparent");
 				headerMobile.classList.add("menu-light","menu-drop-shadow");
-				headerMobile.classList.remove("menu-dark");
+				headerMobile.classList.remove("menu-transparent");
 
 			} else {
-				headerDesktop.classList.add("menu-dark");
+				headerDesktop.classList.add("menu-transparent");
 				headerDesktop.classList.remove("menu-light","menu-drop-shadow");
-				headerMobile.classList.add("menu-dark");
+				headerMobile.classList.add("menu-transparent");
 				headerMobile.classList.remove("menu-light","menu-drop-shadow");
 			}
 		}
@@ -286,23 +286,22 @@
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
     <script>
     window.cookieconsent.initialise({
-    "palette": {
+      "palette": {
         "popup": {
-        "background": "#eaf7f7",
-        "text": "#5c7291"
+          "background": "#237afc"
         },
         "button": {
-        "background": "#56cbdb",
-        "text": "#ffffff"
+          "background": "#fff",
+          "text": "#237afc"
         }
-    },
-    "theme": "classic",
-    "position": "bottom-right",
-    "content": {
-        "href": "privacy.html"
-    }
+      },
+      "position": "bottom-right",
+      "content": {
+        "href": "../privacy.html"
+      }
     });
     </script>
+    <!-- End JavaScript code for Cookie Consent Popup Message -->
     
 </body>
 </html>

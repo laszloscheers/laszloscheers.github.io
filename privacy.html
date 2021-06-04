@@ -26,24 +26,21 @@
 
         gtag('config', 'G-G0D2H7V2X4');
     </script>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet"> 
-    
-    <!-- Link to stylesheet for Cookie Consent Popup Message -->
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-    
+
     <!-- Link to icons for Font Awesome 5 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    
+    <!-- Link to stylesheet for Cookie Consent Popup Message -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
 </head>
 
 <body>
     
     <!-- Begin desktop menu -->
-    <div class="container-menu-desktop menu-transparent menu-sticky">
+    <div class="container-menu-desktop menu-dark menu-sticky">
         <!-- first child item -->
-        <a href="index-3.html"><img src="assets/img/website-logo.png" alt="website logo"></a>
+        <a href="index.html"><img src="assets/img/website-logo.png" alt="website logo"></a>
         <!-- second child item -->
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -54,7 +51,7 @@
     <!-- End desktop menu -->
 
     <!-- Begin mobile menu bar -->
-    <div class="container-menu-bar-mobile menu-transparent menu-sticky">
+    <div class="container-menu-bar-mobile menu-dark menu-sticky">
             <!-- first child -->
             <a href="index-3.html"><img src="assets/img/website-logo.png" alt="website logo"></a>
             <!-- second child -->
@@ -75,11 +72,6 @@
         </ul>
 
         <hr>
-        <h4>About Me</h4>
-        <div class="fly-out-profile-box">
-            <img src="assets/img/profile-pic.jpg" alt="Mary Smith, web designer, Dublin">
-            <p>Hi, I'm <b>Laszlo Scheers</b>, a front-ent web developer based in Dublin, Ireland.</p>
-        </div>
    
         <h4>Contact</h4>
         <p>Have a project you'd like to discuss? Let's make something great together!</p>
@@ -210,7 +202,7 @@
 
 		<div class="item-3">
 			<h4>About Me</h4>
-			<p>Hi, I'm Laszlo Scheers. I'm a front-end web developer.</p>
+			<p>Hi, I'm Laszlo Scheers. I'm a student of front-end web developer.</p>
 		</div>
 
 		<div class="item-3">
@@ -286,14 +278,14 @@
 		function swapMenuStyle() {
 			if (window.pageYOffset > stickyDesktop) {
 				headerDesktop.classList.add("menu-light","menu-drop-shadow");
-				headerDesktop.classList.remove("menu-transparent");
+				headerDesktop.classList.remove("menu-dark");
 				headerMobile.classList.add("menu-light","menu-drop-shadow");
-				headerMobile.classList.remove("menu-transparent");
+				headerMobile.classList.remove("menu-dark");
 
 			} else {
-				headerDesktop.classList.add("menu-transparent");
+				headerDesktop.classList.add("menu-dark");
 				headerDesktop.classList.remove("menu-light","menu-drop-shadow");
-				headerMobile.classList.add("menu-transparent");
+				headerMobile.classList.add("menu-dark");
 				headerMobile.classList.remove("menu-light","menu-drop-shadow");
 			}
 		}
@@ -305,23 +297,22 @@
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
     <script>
     window.cookieconsent.initialise({
-    "palette": {
+      "palette": {
         "popup": {
-        "background": "#eaf7f7",
-        "text": "#5c7291"
+          "background": "#237afc"
         },
         "button": {
-        "background": "#56cbdb",
-        "text": "#ffffff"
+          "background": "#fff",
+          "text": "#237afc"
         }
-    },
-    "theme": "classic",
-    "position": "bottom-right",
-    "content": {
+      },
+      "position": "bottom-right",
+      "content": {
         "href": "privacy.html"
-    }
+      }
     });
     </script>
+    <!-- End JavaScript code for Cookie Consent Popup Message -->
     
 </body>
 </html>

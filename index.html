@@ -26,14 +26,15 @@
         gtag('config', 'G-G0D2H7V2X4');
     </script>
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
-    
     <!-- Link to icons for Font Awesome 5 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     
     <!-- Link to stylesheet for Cookie Consent Popup Message -->
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+    <!-- Link to stylesheet for AOS animate on scroll library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
@@ -42,7 +43,7 @@
 <body class="home-page">
 
     <!-- Begin desktop menu -->
-    <div class="container-menu-desktop menu-transparent menu-sticky">
+    <div class="container-menu-desktop menu-light menu-sticky">
         <!-- first child item -->
         <a href="#"><img src="assets/img/website-logo.png" alt="website logo"></a>
         <!-- second child item -->
@@ -56,7 +57,7 @@
 
 
     <!-- Begin mobile menu bar -->
-    <div class="container-menu-bar-mobile menu-transparent menu-sticky">
+    <div class="container-menu-bar-mobile menu-light menu-sticky">
             <!-- first child -->
             <a href="index-3.html"><img src="assets/img/website-logo.png" alt="website logo"></a>
             <!-- second child -->
@@ -77,11 +78,6 @@
         </ul>
 
         <hr>
-        <h4>About Me</h4>
-        <div class="fly-out-profile-box">
-            <img src="assets/img/profile-pic.jpg" alt="Mary Smith, web designer, Dublin">
-            <p>Hi, I'm <b>Laszlo Scheers</b>, a front-ent web developer based in Dublin, Ireland.</p>
-        </div>
    
         <h4>Contact</h4>
         <p>Have a project you'd like to discuss? Let's make something great together!</p>
@@ -102,26 +98,27 @@
     <!-- End mobile menu slide-out options -->
 		
 	<!-- Begin hero block -->
-	<div class="container-hero-block home-page">
-		<div class="slide-in-top">
-			<h1>Laszlo Scheers</h1>
-			<h2>Front-End Web Developer</h2>
-		</div>
-        <div class="container-flexbox item-1 centered ">
+	
+    <div class="container-hero-block home-page">
+        <h1 class="slide-bottom">Laszlo Scheers</h1>
+    </div>
+    
+    <div class="container-hero-block home-page">
+        <h2 class="rotate-center">Front-end web developer</h2>
+        <div class="container-flexbox item-1 centered scale-up-center">
             <a href="#projects" class="button-arrow"><i class="fas fa-arrow-circle-down"></i></a>
         </div>
-	</div>
+    </div>
+
 	<!-- End hero block -->
 	
 	<!-- Begin single-column container -->
 
 	<!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
-	<div class="container-flexbox bg-pastel-green">
+	<div class="container-flexbox bg-white">
 		<div class="item-1" id="projects">
-			<h2>About me</h2>
-            <p>I am a student of Front-End development at IBAT College in Dublin. Additionally, developing my skills in HTML, CSS and JavaScript on LinkedIn Learning. I have knowledge on responsive design, Git and GitHub platform and Object-Oriented Programming. Actively looking for an entry-level/internship position in web development.</p>
-            
-            <h2>My qualifications:</h2>
+			<h1>About me</h1>
+            <p>I am a student of Front-End development at IBAT College in Dublin. Additionally, developing my skills in HTML, CSS and JavaScript on LinkedIn Learning. I have knowledge on responsive design, Git and GitHub platform and Object-Oriented Programming. Looking for an entry-level/internship position in web development.</p>
 		</div>
     </div>
     <!-- End parent flexbox container -->
@@ -129,41 +126,28 @@
 
 
 	<!-- Begin parent flexbox container for three-column layout (.item-3) on desktops and one-column layout on mobiles -->
-    <section class="container-flexbox">
+    <section class="container-flexbox margin-bottom">
+		<div class="item-1">
+            <h2>My qualifications:</h2>
+        </div>
 
-        <div class="item-col-2">
+        <div class="item-col-2" data-aos="fade-right" data-aos-duration="1500">
             
-            <h1>IBAT College</h1>
-
-            <div class="item-1 frame margin-top">
-                <ul>
-                    <h3>Web design course:</h3>
-                    <li>Introduction to <b>HTML</b>, <b>CSS</b> and hosting on <b>GitHub</b>.</li>
-                    <li>Working with <b>VS Code</b>, <b>colours</b>, <b>images</b> and <b>fonts</b>.</li>
-                    <li>Working with <b>Google Analytics</b>, <b>the box model</b>.</li>
-                    <li>Introduction to <b>responsive web design</b> and <b>CSS flexbox</b>.</li>
-                    <li><b>Hero blocks</b>, <b>contact forms</b>, <b>menus</b> and <b>footers</b>.</li>
-                    <li>Building your <b>personal portfolio</b> website.</li>
-                </ul>          
-            </div>
-
-            <div class="item-1">
-
-                <h3><a href="exercises/index.html" class="fancy-link" target="_blank">Exercises IBAT College</a></h3>
-                <p>A showcase of the excersises during the course.</p>
-                <a href="exercises/index.html" class="button button-solid button-soft" target="_blank">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>
-                <a href="exercises/index.html" target="_blank"><img src="assets/img/web-excercises.png" alt="Project: Smooth Smoothies" widtd="384" height="249" ></a>
-             
-            </div>
+			<h1>Linked-In Learning</h1>
 
         </div>
 
-        <div class="item-col-2">
-			<h1>Linked-In Learning</h1>
+        <div class="item-col-2" data-aos="fade-left" data-aos-duration="1500">
+            
+            <h1>IBAT College</h1>
+
+        </div>
+
+        <div class="item-col-2" data-aos="fade-right" data-aos-duration="1500">
 
             <div class="item-1 frame">
                 <ul>
-                    <h3>Courses:</h3>
+                    <h3>Linked-in Courses:</h3>
                     <li>The <b>fundamentals</b> of Programming.</li>
                     <li>Beyond <b>fundamentals</b>.</li>
                     <li>Learning <b>objet-oriented</b> programming.</li>
@@ -175,13 +159,42 @@
                 </ul>          
             </div>
 
-            <div class="item-1">
+        </div>
 
-                <h3><a href="https://www.linkedin.com/learning/" class="fancy-link" target="_blank">Exercises IBAT College</a></h3>
+        <div class="item-col-2" data-aos="fade-left" data-aos-duration="1500">
+        
+
+            <div class="item-1 frame">
+                <ul>
+                    <h3>Web design course content:</h3>
+                    <li>Introduction to <b>HTML</b>, <b>CSS</b> and hosting on <b>GitHub</b>.</li>
+                    <li>Working with <b>VS Code</b>, <b>colours</b>, <b>images</b> and <b>fonts</b>.</li>
+                    <li>Working with <b>Google Analytics</b>, <b>the box model</b>.</li>
+                    <li>Introduction to <b>responsive web design</b> and <b>CSS flexbox</b>.</li>
+                    <li><b>Hero blocks</b>, <b>contact forms</b>, <b>menus</b> and <b>footers</b>.</li>
+                    <li>Building your <b>personal portfolio</b> website.</li>
+                </ul>          
+            </div>
+
+
+        </div>
+
+        <div class="item-col-2" data-aos="fade-right" data-aos-duration="1500">
+
+            <div class="item-1">
+                <a href="https://linkedin.com/in/laszlo-pedro-scheers-luque-5242091a6" target="_blank"><img src="assets/img/linked-in.png" alt="My linkedin profile" widtd="400" height="260" data-aos="zoom-in-down" data-aos-duration="1500"></a>
+                <h3><a href="https://linkedin.com/in/laszlo-pedro-scheers-luque-5242091a6" class="fancy-link" target="_blank">My linkedin profile</a></h3>
+                <p>Licenses & certifications erned on Linked-in learning.</p>
+            </div>
+
+        </div>
+
+        <div class="item-col-2" data-aos="fade-left" data-aos-duration="1500">
+
+            <div class="item-1">
+                <a href="exercises/index.html" target="_blank"><img src="assets/img/web-excercises.png" alt="Exercises IBAT College" widtd="400" height="260" data-aos="zoom-in-down" data-aos-duration="1500"></a>
+                <h3><a href="exercises/index.html" class="fancy-link" target="_blank">Exercises IBAT College</a></h3>
                 <p>A showcase of the excersises during the course.</p>
-                <a href="https://www.linkedin.com/learning/" class="button button-solid button-soft" target="_blank">View Project &nbsp;<i class="fas fa-arrow-right"></i></a> 
-                <a href="https://www.linkedin.com/learning/" target="_blank"><img src="assets/img/linked-in.png" alt="Project: Smooth Smoothies" widtd="384" height="249" ></a>
-            
             </div>
 
         </div>
@@ -204,7 +217,7 @@
 
 		<div class="item-3">
 			<h4>About Me</h4>
-			<p>Hi, I'm Laszlo Scheers. I'm a front-end web developer.</p>
+			<p>Hi, I'm Laszlo Scheers. I'm a student of front-end web developer.</p>
 		</div>
 
 		<div class="item-3">
@@ -218,6 +231,18 @@
 	
 	<!-- End HTML footer -->
 
+    <!-- Begin JavaScript code for AOS animate on scroll library -->
+    <script>
+        AOS.init({
+        disable: function() {
+        var maxWidth = 977;
+        return window.innerWidth < maxWidth;
+        }
+        });
+
+    </script>
+    
+    <!-- End JavaScript code for AOS animate on scroll library -->
 
 	<!-- Begin JavaScript code for desktop and mobile menus -->
     <script>
@@ -279,16 +304,16 @@
 
 		function swapMenuStyle() {
 			if (window.pageYOffset > stickyDesktop) {
-				headerDesktop.classList.add("menu-light","menu-drop-shadow");
-				headerDesktop.classList.remove("menu-transparent");
-				headerMobile.classList.add("menu-light","menu-drop-shadow");
-				headerMobile.classList.remove("menu-transparent");
+				headerDesktop.classList.add("menu-dark","menu-drop-shadow");
+				headerDesktop.classList.remove("menu-light");
+				headerMobile.classList.add("menu-dark","menu-drop-shadow");
+				headerMobile.classList.remove("menu-light");
 
 			} else {
-				headerDesktop.classList.add("menu-transparent");
-				headerDesktop.classList.remove("menu-light","menu-drop-shadow");
-				headerMobile.classList.add("menu-transparent");
-				headerMobile.classList.remove("menu-light","menu-drop-shadow");
+				headerDesktop.classList.add("menu-light");
+				headerDesktop.classList.remove("menu-dark","menu-drop-shadow");
+				headerMobile.classList.add("menu-light");
+				headerMobile.classList.remove("menu-dark","menu-drop-shadow");
 			}
 		}
 
@@ -300,23 +325,22 @@
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
     <script>
     window.cookieconsent.initialise({
-    "palette": {
+      "palette": {
         "popup": {
-        "background": "#eaf7f7",
-        "text": "#5c7291"
+          "background": "#237afc"
         },
         "button": {
-        "background": "#56cbdb",
-        "text": "#ffffff"
+          "background": "#fff",
+          "text": "#237afc"
         }
-    },
-    "theme": "classic",
-    "position": "bottom-right",
-    "content": {
+      },
+      "position": "bottom-right",
+      "content": {
         "href": "privacy.html"
-    }
+      }
     });
     </script>
+    <!-- End JavaScript code for Cookie Consent Popup Message -->
     
 </body>
 </html>

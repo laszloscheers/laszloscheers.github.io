@@ -17,6 +17,19 @@
     <!-- Link to icons for Font Awesome 5 -->;
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">	
 
+	<!-- Link to stylesheet for Cookie Consent Popup Message -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-G0D2H7V2X4"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-G0D2H7V2X4');
+	</script>
+
 </head>
 
 <body>
@@ -245,6 +258,27 @@
 
 	</script>
 	<!-- End JavaScript code for desktop and mobile menus -->
+
+    <!-- JavaScript for Cookie Consent Popup Message -->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#237afc"
+        },
+        "button": {
+          "background": "#fff",
+          "text": "#237afc"
+        }
+      },
+      "position": "bottom-right",
+      "content": {
+        "href": "../../privacy.html"
+      }
+    });
+    </script>
+    <!-- End JavaScript code for Cookie Consent Popup Message -->
 	
 </body>
 </html>
