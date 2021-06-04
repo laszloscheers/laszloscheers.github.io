@@ -608,6 +608,11 @@ a.button-arrow:hover{
     transform: scale(1.7);
     transition: 1s;
 }
+@media (max-width:767px) { 
+	a.button-arrow { 
+		display: none;
+	}
+}
 .fas .fa-arrow-circle-down {
     background-color: #FFFFFF;
 }
