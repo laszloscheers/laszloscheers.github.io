@@ -522,12 +522,10 @@ a[href^=tel] { text-decoration: none; color: #FFFFFF }
 
 /* Mobiles - block height, text width and h1 bottom margin */
 @media all and (max-width:767px) { 
-	.container-hero-block { height: 500px }
+	.container-hero-block { height: 300px }
 	.container-hero-block h1, .container-hero-block h2  { 
 		width: 90%; 
 	}
-	.container-hero-block h1 { margin-top: 18%; margin-bottom: 5% }
-    .container-hero-block h2 { margin-top: 5%; }
 }
 
 
