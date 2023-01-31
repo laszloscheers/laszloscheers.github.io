@@ -1,2 +1,2 @@
-# laszloluque.github.io
-Web Design and Development Project
+# laszloscheers.github.io
+Web Design porfolio
